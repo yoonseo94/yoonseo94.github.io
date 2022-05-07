@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/signup.css">
+
+    <title>로그인 & 회원가입</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">로그인</span>
+
+                <form action="#" onsubmit="loginFrm();">
+                    <div class="input-field">
+                        <input type="text" placeholder="메일 아이디, 이메일" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="비밀번호" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">아이디 저장</label>
+                        </div>
+                        
+                        <a href="#" class="text">비밀번호 찾기</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="로그인">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">
+                        <a href="#" class="text signup-link">회원가입</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- 회원가입 -->
+            <div class="form signup">
+                <span class="title">회원가입</span>
+
+                <form name="signupFrm" onsubmit="return signupCheck();">
+                    <div class="input-field">
+                        <input type="text"  name="userName" id="userName" placeholder="이름은 최소 (한글)2글자 이상" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="email" id="email" placeholder="abcde@gmail.com" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="pwd" id="pwd" class="password" placeholder="영문 대/소문자와 숫자 4~12자리" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="pwdCheck" class="password" placeholder="비밀번호 확인" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck">
+                            <label for="sigCheck" class="text">아이디 저장</label>
+                        </div>
+                        
+                        <a href="#" class="text" onclick="memberList()">회원목록(비밀번호 찾기)</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" id="singup" value="확인">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">
+                        <a href="javascript:void(0)" class="text login-link" onclick="memberList()">로그인하러 가기</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/signup.js"></script>
+
+</body>
+</html>

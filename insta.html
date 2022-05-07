@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+        
+        <!--=============== 아이콘 사이트 ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../choiyoonseo/css/insta_styles.css">
+
+        <title>Mini portfolio website - Bedimcode</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+
+            <!-- 다크모드 -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <!-- 프로필 사진 -->
+                            <img src="../choiyoonseo/img/me.png" alt="">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Yoon Seo</h2>
+                    <h3 class="profile__profession">안녕하세요😊</h3>
+
+                    <!-- 인스타, 카카오, 깃허브 -->
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://open.kakao.com/o/gMbwAbee" target="_blank" class="profile__social-link">
+                            <i class="ri-kakao-talk-line"></i>
+                        </a>
+                        <a href="https://github.com/yoonseo94" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>
+                </div>
+                <!-- 소개 -->
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">Hobby</h3>
+                        <p class="profile__info-description">
+                            배드민턴🏸 <br> 수영🏊‍♂️ <br> 여행📍
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">Favorite</h3>
+                        <p class="profile__info-description">
+                            고양이😍 <br> 맛집탐방😎
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#hobbys">
+                        Hobby
+                    </button>
+                    <button class="filters__button" data-target="#favorites">
+                        Favorite
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== Hobby ===============-->
+                    <div class="hobbys__content grid filters__active" data-content id="hobbys">
+                        <article class="hobbys__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="./img/badminton1.jpg" alt="" class="hobbys__img">
+
+                            <div class="hobbys__modal">
+                                <div>
+                                    <span class="hobbys__subtitle">배드민턴🏸</span>
+                                    <h3 class="hobbys__title">민턴대회 선심으로가서 팬심으로 심판 본 날😎</h3>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="hobbys__card">
+                            <!-- 600 x 400, 1000 x 800, 1200 x 1000 -->
+                            <img src="./img/badminton2.jpg" alt="" class="hobbys__img">
+
+                            <div class="hobbys__modal">
+                                <div>
+                                    <span class="hobbys__subtitle">배드민턴🏸</span>
+                                    <h3 class="hobbys__title">똑같은 일상이 지루할 때 한번씩 민턴대회에 나가서 마음을 다잡습니다💪 </h3>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="hobbys__card">
+                            <img src="./img/swim1.jpg" alt="" class="hobbys__img">
+
+                            <div class="hobbys__modal">
+                                <div>
+                                    <span class="hobbys__subtitle">수영🏊‍♂️</span>
+                                    <h3 class="hobbys__title">수영을 원래 안좋아했는데... <br> 어쩌다보니 이걸 직업삼아 3년 일하고 <br> 어쩌다보니 여름이면 바다에...😂</h3>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="hobbys__card">
+                            <img src="./img/trip1.jpg" alt="" class="hobbys__img">
+
+                            <div class="hobbys__modal">
+                                <div>
+                                    <span class="hobbys__subtitle">여행📍</span>
+                                    <h3 class="hobbys__title">삼척 장호항 <br> 스노우쿨링으로 유명한 곳! 바다가 맑아서 보기만해도 힐링😊</h3>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="hobbys__card">
+                            <img src="./img/trip2.jpg" alt="" class="hobbys__img">
+
+                            <div class="hobbys__modal">
+                                <div>
+                                    <span class="hobbys__subtitle">여행📍</span>
+                                    <h3 class="hobbys__title">보라카이 <br> 휴양지로 강추👍</h3>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="hobbys__card">
+                            <img src="./img/trip3.jpg" alt="" class="hobbys__img">
+
+                            <div class="hobbys__modal">
+                                <div>
+                                    <span class="hobbys__subtitle">여행📍</span>
+                                    <h3 class="hobbys__title">7일간 오키나와 <br> 원래 오사카 가는거였는데 친구가 예매를 잘못해서 오키나와에서만 7일 여행ㅋㅋ😎</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--=============== Favorite ===============-->
+                    <div class="favorites__content grid" data-content id="favorites">
+
+                        <article class="favorites__card">
+                            <img src="./img/yoon.jpg" alt="" class="favorites__img">
+
+                            <div class="favorites__modal">
+                                <div>
+                                    <span class="favorites__subtitle">배드민턴🏸</span>
+                                    <h3 class="favorites__title">Payment Site</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; 2022 yoonseo
+            </span>
+        </footer>
+
+        <!--=============== 스크롤바 참고 https://scrollrevealjs.org/ ===============-->
+        <script src="./js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="../choiyoonseo/js/insta.js"></script>
+    </body>
+</html>
