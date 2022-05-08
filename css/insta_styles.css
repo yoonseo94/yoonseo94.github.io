@@ -304,7 +304,7 @@ body.dark-theme {
 }
 
 .hobbys__card:hover .hobbys__modal ,
-.favorites__card:hover .favorites__mod{
+.favorites__card:hover .favorites__modal{
   bottom: 0;
 }
 

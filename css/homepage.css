@@ -908,26 +908,8 @@ img {
     gap: .5rem;
   }
 
-  .services__container{
-    grid-template-columns: max-content;
-    justify-content: center;
-  }
-  
-  .services__content{
-    padding-right: 3.5rem;
-  }
-
-  .services__modal{
-    padding: 0 .5rem;
-  }
-
-  /* 추후 수정할 부분 */
-  /* .swiper-horizontal > .swiper-pagination-bullets{
-    bottom: -35px;
-  } */
-
   .project__img{
-    width: 200px;
+    width: 100px;
   }
 
   .testimonial__data,
@@ -1069,20 +1051,6 @@ img {
     grid-template-columns: .5fr;
   }
 
-  .services__container{
-    grid-template-columns: repeat(3, 218px);
-    justify-content: center;
-  }
-  .services__icon{
-    font-size: 2rem;
-  }
-  .services__content{
-    padding: 6rem 0 2rem 2.5rem;
-  }
-  .services__modal-content{
-    width: 450px;
-  }
-
   .portfolio__img{
     width: 320px;
   }
@@ -1147,9 +1115,6 @@ img {
     transform: translateX(-5rem);
   }
 
-  .services__container{
-    grid-template-columns: repeat(3, 238px);
-  }
   .skills__title {
     font-size: var(--normal-font-size);
     margin-bottom: 2.5rem;
@@ -1175,5 +1140,10 @@ img {
   }
   .contact__inputs{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .project__img{
+    width: 260px;
+    height: 230px;
+    justify-self: center;
   }
 }
