@@ -15,11 +15,6 @@
                         <li><a href="/categories/blog" class="">Blog Dev({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-                {% for category in site.categories %}
-                    {% if category[0] == "JSP&SERVLET" %}
-                        <li><a href="/categories/jsp&servlet" class="">JSP&SERVLET({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
             </ul>
       </li>
       <li>	
